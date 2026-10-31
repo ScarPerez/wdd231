@@ -1,6 +1,6 @@
 /* ----------------COLOR SCHEME-------------------
 deep slate blue: #1D3D5E
-light slate blue: #E8EFF4, 
+ice blue: #6689F3, 
 */ 
 
 /****************** SITE WIDE ********************/
@@ -30,7 +30,7 @@ header span {
     color: #3d405b
 }
 
-/*************** HAMBURGER NAVIGATION ****************/
+/*************** HAMBURGER ****************/
 .hamburger {
     background: none;
     border: none;
@@ -44,4 +44,38 @@ header span {
 
 .hamburger.show::before {
     content: "\00D7";
+}
+
+/*************** NAVIGATION ****************/
+.navigation {
+    display: none;
+
+}
+.navigation.show {
+    display: block;
+}
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color:#1D3D5E;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+}
+.navigation li.current {
+    background-color: #eee;
+}
+
+.navigation a:hover {
+    background-color: #6689F3;
+}
+
+
+
+h1 {
+    margin-left: 10px;
 }
