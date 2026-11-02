@@ -95,7 +95,7 @@ header span {
     transition: background-color .2s ease;
 }
 .navigation li.current {
-    background-color: #6689F3;
+    background-color: #1d3d5e;
 }
 
 .navigation a:hover {
