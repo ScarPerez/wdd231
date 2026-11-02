@@ -26,4 +26,22 @@
         border: none;
     }
 
+     /* Main content */
+    .home-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+    }
+
+    .about, .photo {
+        height: 100%;
+    }
+
+    /* Certificate courses */
+    .course-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
 }

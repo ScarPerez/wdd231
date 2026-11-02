@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+    <title>WDD 231 | Scarlett Pérez</title>
+
+    <meta name="description" content="Scarlett Pérez's WDD 231 course home page, featuring personal information and web development courses.">
+    <meta name="author" content="Scarlett Pérez">
 
     <!--Google Font Here-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +15,13 @@
 
     <!-- Style Sheets Here-->
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
+    
+    <!---------JavaScript Files--------->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 
 </head>
 <body>
@@ -21,32 +29,105 @@
     <header>
         <img src="images/home.svg" alt="Site Logo" width="16" height="16">
         <span>Scarlett Site Title</span>
-        <button id="ham-btn" class="hamburger"></button>
+        <button id="ham-btn" class="hamburger" 
+            aria-label="Open navigation menu" 
+            aria-controls="nav-bar" 
+            aria-expanded="false">
+        
+        </button>
     </header>
 
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li class="current"><a href="#" aria-current="page">News &amp; Events</a></li> 
-            <li><a href="#">Dedicated Temples</a></li>
-            <li><a href="#">Announced Temples</a></li>
+            <li class="current"><a href="#" aria-current="page">Home</a></li> 
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
         </ul>
 
     </nav>
 
     <main>
-        <h1></h1>
+        <h1>Home</h1>
+
+        <!-- ABOUT ME AND STUDENT PHOTO -->
+        <div class="home-grid">
+
+            <section class="about">
+                <h2>About Me</h2>
+
+                <p>
+                    Hello! My name is Scarlett Pérez. I am a BYU-Pathway
+                    Worldwide student pursuing a Bachelor's degree in
+                    Professional Studies. I am interested in graphic design,
+                    web development, and creating meaningful digital
+                    experiences. I enjoy learning new skills and exploring
+                    creative projects. In my free time, I like watching
+                    Formula 1, exercising, and baking desserts.
+                </p>
+
+            </section>
+
+            <section class="photo">
+                <h2>Student Photo</h2>
+
+                <img src="images/profile.jpg"
+                     alt="Portrait of Scarlett Pérez"
+                     loading="lazy">
+
+            </section>
+
+        </div>
+
+        <!-- WEB CERTIFICATE COURSES -->
+        <section class="courses">
+
+            <h2>Web Certificate Courses</h2>
+
+            <!-- COURSE FILTERS -->
+            <div class="course-filters">
+
+                <button id="all-btn" class="filter-btn" type="button">
+                    All
+                </button>
+
+                <button id="cse-btn" class="filter-btn" type="button">
+                    CSE
+                </button>
+
+                <button id="wdd-btn" class="filter-btn" type="button">
+                    WDD
+                </button>
+
+            </div>
+
+            <!-- COURSE CARDS -->
+            <div id="course-container" class="course-container">
+
+                <!-- JavaScript will generate course cards here -->
+
+            </div>
+
+            <!-- TOTAL CREDITS -->
+            <p id="credit-total">
+                Total credits for courses listed above: 0
+            </p>
+
+        </section>
     </main>
     <footer>
         <div class="social">
-            <a href="" target="_blank"><img src="images/facebook.svg" alt="Facebook Logo" width="16" height="16"></a>
-            <a href="" target="_blank"><img src="images/github.svg" alt="GitHub Logo" width="16" height="16"></a>
-            <a href="" target="_blank"><img src="images/instagram.svg" alt="Instagram Logo" width="16" height="16"></a>
-            <a href="" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn Logo" width="16" height="16"></a>   
+            <a href="https://www.facebook.com/share/1KMC8Wb4Wd/" target="_blank"><img src="images/facebook.svg" alt="Facebook Logo" width="16" height="16"></a>
+            <a href="https://github.com/scarlett-perez" target="_blank"><img src="images/github.svg" alt="GitHub Logo" width="16" height="16"></a>
+            <a href="https://www.instagram.com/scar_perez12?exln=am9xeTN2bjR5emhh" target="_blank"><img src="images/instagram.svg" alt="Instagram Logo" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/scarlett-perez-0a8b4b20a/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn Logo" width="16" height="16"></a>   
         </div>
-        <p>copyright symbol and current year</p>
-        <p> Last Modified </p>
+
+         <p>&copy; <span id="currentyear"></span> Scarlett Pérez | Guatemala</p>
+
+        <p>Last Modified: <span id="lastModified"></span></p>
+
     </footer>
-    <script src="scripts/navigation.js"></script>
+    
     
 </body>
 </html>
