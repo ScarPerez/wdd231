@@ -19,6 +19,7 @@ async function getProphetData() {
         console.error(error);
     }
 }
+
 const displayProphets = (prophets) => {
     prophets.forEach((prophet) => {
 
@@ -35,6 +36,9 @@ const displayProphets = (prophets) => {
         portrait.setAttribute('loading', 'lazy');
         portrait.setAttribute('width', '340');
         portrait.setAttribute('height', '440');
+
+        birthDate.textContent = `Date of Birth: ${prophet.birthdate}`;
+        birthPlace.textContent = `Place of Birth: ${prophet.birthplace}`;
 
         card.appendChild(fullName);
         card.appendChild(portrait);
