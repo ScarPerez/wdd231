@@ -1,0 +1,59 @@
+
+[
+  {
+    "name": "Supermercados La Torre",
+    "address": "5 avenida, zona 1, Edificio Moran, Retalhuleu",
+    "phone": "+502 7771-4258",
+    "website": "https://www.supermercadoslatorre.com/",
+    "image": "Torre.png",
+    "membership": 3
+  },
+  {
+    "name": "MAX Kiosco Retalhuleu",
+    "address": "2da Avenida 4-40, zona 5, Centro Comercial La Trinidad, Retalhuleu",
+    "phone": "+502 4157-9581",
+    "website": "https://www.max.com.gt/",
+    "image": "Max.jpg",
+    "membership": 3
+  },
+  {
+    "name": "Tiendas Carrion Retalhuleu",
+    "address": "1a. Calle y 5a. Avenida A, C.C. La Trinidad, Retalhuleu",
+    "phone": "+502 2381-8900",
+    "website": "https://tiendascarrion.com/",
+    "image": "Carrion.png",
+    "membership": 3
+  },
+  {
+    "name": "Adoc La Trinidad Retalhuleu",
+    "address": "Kilómetro 188, Avenida Centro Comercial La Trinidad, Retalhuleu",
+    "phone": "+502 2431-954",
+    "website": "https://gt.tiendasadoc.com/",
+    "image": "Adoc.jpg",
+    "membership": 1
+  },
+  {
+    "name": "Agencias Way Retalhuleu",
+    "address": "5 avenida 5-55, zona 1, Retalhuleu",
+    "phone": "+502 7771-8632",
+    "website": "https://www.agenciasway.com/",
+    "image": "Way.jpg",
+    "membership": 2
+  },
+  {
+    "name": "La Holandesa",
+    "address": "5A Avenida 5-43, Retalhuleu, Guatemala",
+    "phone": "+502 4751-2904",
+    "website": "https://www.holandesa.com/",
+    "image": "Holandesa.png",
+    "membership": 2
+  },
+  {
+    "name": "Totto CC Retalhuleu",
+    "address": "5A Avenida A 1-15, Retalhuleu, Guatemala",
+    "phone": "",
+    "website": "https://gt.totto.com/",
+    "image": "Totto.jpg",
+    "membership": 1
+  }
+]

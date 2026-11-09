@@ -1,0 +1,78 @@
+
+/* ==============================
+   LARGE SCREEN STYLES
+================================ */
+
+@media screen and (min-width: 38rem) {
+
+    /* HEADER */
+
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1.25rem 2rem;
+    }
+
+    .main-navigation {
+        width: auto;
+    }
+
+    .main-navigation ul {
+        gap: 0.75rem;
+    }
+
+    .main-navigation a {
+        font-size: 0.9rem;
+        padding: 0.7rem 0.85rem;
+    }
+
+    /* DIRECTORY */
+
+    .directory-section {
+        padding: 3rem 2rem;
+    }
+
+    .directory-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .view-options {
+        justify-content: flex-end;
+    }
+
+    .members-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* FOOTER */
+
+    .footer-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .footer-social {
+        justify-content: flex-start;
+    }
+
+    .footer-development {
+        width: 100%;
+    }
+}
+
+/* ==============================
+   EXTRA LARGE SCREENS
+================================ */
+
+@media screen and (min-width: 64rem) {
+
+    .members-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
