@@ -37,6 +37,9 @@ function displayResults(data) {
   currentTemp.innerHTML = `${data.main.temp}&deg;F`;
 
   const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+  
+  console.log("Weather icon:", data.weather[0].icon);
+  console.log("Icon URL:", iconsrc);
 
   const desc = data.weather[0].description;
 
