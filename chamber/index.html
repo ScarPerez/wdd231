@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Welcome to the Retalhuleu Chamber of Commerce. Connect with local businesses, explore community events, and discover business opportunities in Retalhuleu, Guatemala.">
+
+    <meta name="author" content="Scarlett Pérez Silva">
+
+    <title>Home | Retalhuleu Chamber of Commerce</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Home | Retalhuleu Chamber of Commerce">
+    <meta property="og:description" content="Connect with local businesses and discover opportunities in Retalhuleu, Guatemala.">
+    <meta property="og:image" content="https://scarperez.github.io/wdd231/chamber/images/og-image.jpg">
+    <meta property="og:url" content="https://scarperez.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+
+            <a href="index.html" class="brand">
+                <span class="brand-acronym">RCC</span>
+
+                <span class="brand-name">
+                    <strong>Retalhuleu</strong>
+                    <small>Chamber of Commerce</small>
+                </span>
+            </a>
+
+            <nav class="main-navigation" aria-label="Main navigation">
+                <ul>
+                    <li>
+                        <a href="index.html" aria-current="page">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="discover.html">Discover</a>
+                    </li>
+
+                    <li>
+                        <a href="directory.html">Directory</a>
+                    </li>
+
+                    <li>
+                        <a href="join.html">Join</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <img
+                src="images/retalhuleu-hero.webp"
+                alt="Business and commercial activity in Retalhuleu, Guatemala"
+                class="hero-image"
+            >
+
+            <div class="hero-content">
+
+                <h1>Growing Together, Building Opportunities</h1>
+
+                <p>
+                    Connecting businesses and strengthening
+                    our community in Retalhuleu.
+                </p>
+
+                <a href="join.html" class="hero-button">
+                    Join the Chamber
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Home Information -->
+        <div class="home-container">
+
+            <!-- Upcoming Events Section -->
+            <section class="events-section">
+
+                <h2>Upcoming Events</h2>
+
+                <div class="events-container">
+
+                    <article class="event-card">
+                        <h3>Business Networking</h3>
+
+                        <p>
+                            Connect with local entrepreneurs
+                            and discover new opportunities
+                            for your business.
+                        </p>
+
+                        <p>
+                            <strong>Date:</strong> To be announced
+                        </p>
+                    </article>
+
+                    <article class="event-card">
+                        <h3>Community Business Forum</h3>
+
+                        <p>
+                            Explore ideas and opportunities
+                            to strengthen our local economy
+                            and business community.
+                        </p>
+
+                        <p>
+                            <strong>Date:</strong> To be announced
+                        </p>
+                    </article>
+
+                </div>
+
+            </section>
+
+            <!-- Weather Section -->
+            <section class="weather-section">
+
+                <h2>Weather in Retalhuleu</h2>
+
+                <div class="weather-current">
+
+                    <h3>Current Weather</h3>
+
+                    <p id="current-temp">--°C</p>
+
+                    <p id="weather-description">
+                        Loading weather...
+                    </p>
+
+                </div>
+
+                <div class="weather-forecast">
+
+                    <h3>3-Day Forecast</h3>
+
+                    <div id="forecast-container">
+                        <p>Loading forecast...</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Business Spotlights Section -->
+            <section class="spotlights-section">
+
+                <h2>Business Spotlights</h2>
+
+                <div
+                    id="spotlights-container"
+                    class="spotlights-container"
+                >
+                    <p>Loading featured businesses...</p>
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-contact">
+
+                <h2>Retalhuleu Chamber of Commerce</h2>
+
+                <p>Retalhuleu, Guatemala</p>
+
+                <p>Email: info@rcc-retalhuleu.com</p>
+
+            </div>
+
+            <div class="footer-social">
+
+                <a href="#" aria-label="Facebook">Facebook</a>
+
+                <a href="#" aria-label="Instagram">Instagram</a>
+
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+
+            </div>
+
+            <div class="footer-development">
+
+                <p>
+                    &copy; <span id="currentyear"></span>
+                    Retalhuleu Chamber of Commerce
+                </p>
+
+                <p>Developed by Scarlett Pérez Silva</p>
+
+                <p>WDD 231</p>
+
+                <p>
+                    Last Modification:
+                    <span id="lastModified"></span>
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

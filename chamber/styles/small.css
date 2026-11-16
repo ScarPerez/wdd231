@@ -281,3 +281,240 @@ footer a:hover {
     color: var(--background-color);
     text-decoration: underline;
 }
+
+
+/* ==============================
+   HOME PAGE - HERO SECTION
+================================ */
+
+.hero {
+    position: relative;
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: var(--primary-color);
+}
+
+.hero-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(15, 35, 55, 0.85),
+        rgba(15, 35, 55, 0.35)
+    );
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    padding: 3rem 1.5rem;
+    color: var(--white-color);
+}
+
+.hero-content h1 {
+    color: var(--white-color);
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 0.85rem 1.5rem;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.2s ease;
+}
+
+.hero-button:hover {
+    background-color: var(--background-color);
+}
+
+
+/* ==============================
+   HOME PAGE - MAIN CONTAINER
+================================ */
+
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.home-container section {
+    min-width: 0;
+}
+
+.home-container h2 {
+    font-size: 1.7rem;
+    margin-bottom: 1.25rem;
+}
+
+
+/* ==============================
+   UPCOMING EVENTS
+================================ */
+
+.events-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.event-card {
+    padding: 1.25rem;
+    background-color: var(--background-color);
+    border-left: 4px solid var(--primary-color);
+    border-radius: 6px;
+}
+
+.event-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.event-card p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+
+/* ==============================
+   WEATHER
+================================ */
+
+.weather-section {
+    padding: 1.25rem;
+    background-color: var(--background-color);
+    border-radius: 8px;
+}
+
+.weather-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+}
+
+.weather-current {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--white-color);
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+#current-temp {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+#weather-description {
+    font-size: 0.9rem;
+    text-transform: capitalize;
+}
+
+.weather-forecast {
+    padding-top: 0.5rem;
+}
+
+#forecast-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+}
+
+.forecast-card {
+    padding: 0.75rem;
+    text-align: center;
+    background-color: var(--white-color);
+    border-radius: 6px;
+}
+
+.forecast-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+
+/* ==============================
+   BUSINESS SPOTLIGHTS
+================================ */
+
+.spotlights-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+.spotlight-card {
+    padding: 1.5rem;
+    background-color: var(--white-color);
+    border: 1px solid #DCE5EC;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(29, 61, 94, 0.08);
+}
+
+.spotlight-card img {
+    width: 100%;
+    max-width: 180px;
+    height: 110px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.spotlight-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+}
+
+.spotlight-card p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.spotlight-card a {
+    display: inline-block;
+    margin-top: 0.75rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.spotlight-card a:hover {
+    color: var(--primary-color);
+}
+
+
+/* ==============================
+   ACCESSIBILITY
+================================ */
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #6689F3;
+    outline-offset: 3px;
+}
