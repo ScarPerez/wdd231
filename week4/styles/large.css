@@ -1,0 +1,38 @@
+
+@media screen and (min-width: 700px) {
+
+    body {
+        padding: 2rem;
+    }
+
+    main {
+        max-width: 750px;
+        padding: 2.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        gap: 1.2rem;
+    }
+
+    form input:not([type="radio"]),
+    form select {
+        padding: 0.85rem;
+    }
+
+    form input[type="submit"] {
+        max-width: 300px;
+        align-self: center;
+        transition: background-color 0.3s ease;
+    }
+
+    #results {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem 1rem;
+    }
+
+}
