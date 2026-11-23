@@ -43,7 +43,7 @@ const courses = [
     {
         subject: "WDD",
         number: 231,
-        title: "Web Content Development 1",
+        title: "Web Frontend Development I",
         credits: 2,
         completed: false,
         description: "Learn to build responsive and accessible websites using modern web development practices. Work with JavaScript, APIs, and dynamic web content.",
