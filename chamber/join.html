@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Apply for membership at the Retalhuleu Chamber of Commerce and connect with the local business community.">
+    <meta name="author" content="Scarlett Pérez Silva">
+
+    <title>Join | Retalhuleu Chamber of Commerce</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Join | Retalhuleu Chamber of Commerce">
+    <meta property="og:description" content="Become a member of the Retalhuleu Chamber of Commerce.">
+    <meta property="og:image" content="https://scarperez.github.io/wdd231/chamber/images/og-image.jpg">
+    <meta property="og:url" content="https://scarperez.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="brand">
+                <span class="brand-acronym">RCC</span>
+                <span class="brand-name">
+                    <strong>Retalhuleu</strong>
+                    <small>Chamber of Commerce</small>
+                </span>
+            </a>
+
+            <nav class="main-navigation" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html" aria-current="page">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="join-section">
+            <h1>Join the Chamber</h1>
+
+            <p class="join-intro">
+                Become part of Retalhuleu's business community.
+                Choose a membership level and submit your application.
+            </p>
+
+            <div class="join-layout">
+
+                <!-- MEMBERSHIP FORM -->
+                <form method="get" action="thankyou.html"
+                    class="membership-form">
+
+                    <h2>Membership Application</h2>
+
+                    <label>
+                        First Name
+                        <input
+                            type="text"
+                            name="first"
+                            title="Enter your first name"
+                            autocomplete="given-name"
+                            required>
+                    </label>
+
+                    <label>
+                        Last Name
+                        <input
+                            type="text"
+                            name="last"
+                            title="Enter your last name"
+                            autocomplete="family-name"
+                            required>
+                    </label>
+
+                    <label>
+                        Organizational Title
+                        <input
+                            type="text"
+                            name="organization-title"
+                            title="Enter your organizational title using at least seven letters, spaces, or hyphens"
+                            autocomplete="organization-title"
+                            pattern="[A-Za-z\s-]{7,}">
+                    </label>
+
+                    <label>
+                        Email Address
+                        <input
+                            type="email"
+                            name="email"
+                            title="Enter a valid email address"
+                            autocomplete="email"
+                            placeholder="example@email.com"
+                            required>
+                    </label>
+
+                    <label>
+                        Mobile Phone Number
+                        <input
+                            type="tel"
+                            name="phone"
+                            title="Enter your mobile phone number"
+                            autocomplete="tel"
+                            required>
+                    </label>
+
+                    <label>
+                        Business / Organization Name
+                        <input
+                            type="text"
+                            name="business"
+                            title="Enter your business or organization name"
+                            autocomplete="organization"
+                            required>
+                    </label>
+
+                    <label>
+                        Membership Level
+                        <select name="membership" title="Select a membership level" required>
+                            <option value="" disabled selected>Select a membership level</option>
+                            <option value="np">NP Membership</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Business / Organization Description
+                        <textarea
+                            name="description"
+                            title="Describe your business or organization"
+                            rows="5"></textarea>
+                    </label>
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+
+                    <button type="submit">Apply for Membership</button>
+                </form>
+
+                <!-- MEMBERSHIP CARDS -->
+                <section class="membership-levels"
+                    aria-label="Membership levels">
+
+                    <h2>Membership Options</h2>
+
+                    <article class="level-card np-card">
+                        <h3>NP Membership</h3>
+                        <p>For nonprofit organizations.</p>
+                        <a href="#np-modal" class="modal-link">View Benefits</a>
+                    </article>
+
+                    <article class="level-card bronze-card">
+                        <h3>Bronze Membership</h3>
+                        <p>Build connections and grow your business.</p>
+                        <a href="#bronze-modal" class="modal-link">View Benefits</a>
+                    </article>
+
+                    <article class="level-card silver-card">
+                        <h3>Silver Membership</h3>
+                        <p>Enjoy additional business opportunities.</p>
+                        <a href="#silver-modal" class="modal-link">View Benefits</a>
+                    </article>
+
+                    <article class="level-card gold-card">
+                        <h3>Gold Membership</h3>
+                        <p>Access premium promotional benefits.</p>
+                        <a href="#gold-modal" class="modal-link">View Benefits</a>
+                    </article>
+                </section>
+            </div>
+        </section>
+
+        <!-- MEMBERSHIP MODALS -->
+
+        <dialog id="np-modal">
+            <h2>NP Membership Benefits</h2>
+            <p>Designed for nonprofit organizations.</p>
+            <ul>
+                <li>No membership fee.</li>
+                <li>Access to chamber networking activities.</li>
+                <li>Community event participation.</li>
+                <li>Access to chamber resources.</li>
+            </ul>
+            <button type="button" class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="bronze-modal">
+            <h2>Bronze Membership Benefits</h2>
+            <p>A great starting point for local businesses.</p>
+            <ul>
+                <li>Business directory listing.</li>
+                <li>Networking opportunities.</li>
+                <li>Access to selected chamber events.</li>
+                <li>Member news and updates.</li>
+            </ul>
+            <button type="button" class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="silver-modal">
+            <h2>Silver Membership Benefits</h2>
+            <p>More opportunities to promote your business.</p>
+            <ul>
+                <li>All Bronze membership benefits.</li>
+                <li>Discounts on selected events.</li>
+                <li>Business training opportunities.</li>
+                <li>Featured business promotion.</li>
+            </ul>
+            <button type="button" class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="gold-modal">
+            <h2>Gold Membership Benefits</h2>
+            <p>Our premium membership level.</p>
+            <ul>
+                <li>All Silver membership benefits.</li>
+                <li>Priority business spotlight placement.</li>
+                <li>Exclusive networking events.</li>
+                <li>Additional promotional opportunities.</li>
+            </ul>
+            <button type="button" class="close-modal">Close</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-contact">
+                <h2>Retalhuleu Chamber of Commerce</h2>
+                <p>Retalhuleu, Guatemala</p>
+                <p>Email: info@rcc-retalhuleu.com</p>
+            </div>
+
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook">Facebook</a>
+                <a href="#" aria-label="Instagram">Instagram</a>
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+
+            <div class="footer-development">
+                <p>
+                    &copy; <span id="currentyear"></span>
+                    Retalhuleu Chamber of Commerce
+                </p>
+                <p>Developed by Scarlett Pérez Silva</p>
+                <p>WDD 231</p>
+                <p>Last Modification: <span id="lastModified"></span></p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

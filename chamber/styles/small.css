@@ -518,3 +518,200 @@ button:focus-visible {
     outline: 3px solid #6689F3;
     outline-offset: 3px;
 }
+
+
+/* ==============================
+   JOIN PAGE
+================================ */
+
+.join-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.join-section h1 {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.join-intro {
+    max-width: 650px;
+    color: #526575;
+    margin-bottom: 2rem;
+}
+
+.join-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.membership-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    background-color: var(--background-color);
+    border-radius: 8px;
+}
+
+.membership-form h2,
+.membership-levels h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.membership-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.membership-form input,
+.membership-form select,
+.membership-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #AABBC8;
+    border-radius: 5px;
+    background-color: var(--white-color);
+    font-family: var(--body-font);
+    font-size: 0.95rem;
+}
+
+.membership-form input:focus,
+.membership-form select:focus,
+.membership-form textarea:focus {
+    outline: 3px solid #6689F3;
+    outline-offset: 2px;
+}
+
+.membership-form button {
+    padding: 0.9rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.membership-form button:hover {
+    background-color: var(--secondary-color);
+}
+
+.membership-levels {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.level-card {
+    padding: 1.25rem;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #DCE5EC;
+    box-shadow: 0 2px 8px rgba(29, 61, 94, 0.08);
+    opacity: 0;
+    animation: cardEntrance 0.7s ease forwards;
+}
+
+.level-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.level-card p {
+    font-size: 0.9rem;
+}
+
+.level-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.np-card {
+    animation-delay: 0.1s;
+    background-color: #E8EFF4;
+}
+
+.bronze-card {
+    animation-delay: 0.3s;
+    background-color: #E8D1BE;
+}
+
+.silver-card {
+    animation-delay: 0.5s;
+    background-color: #DCE5EC;
+}
+
+.gold-card {
+    animation-delay: 0.7s;
+    background-color: #F2E6C9;
+}
+
+@keyframes cardEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ==============================
+   MEMBERSHIP DIALOGS
+================================ */
+
+dialog {
+    width: min(90%, 500px);
+    padding: 2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+dialog::backdrop {
+    background-color: rgba(15, 35, 55, 0.65);
+}
+
+dialog h2 {
+    margin-bottom: 1rem;
+}
+
+dialog li {
+    margin-bottom: 0.6rem;
+    line-height: 1.5;
+}
+
+.close-modal {
+    margin-top: 1rem;
+    padding: 0.7rem 1.2rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    background-color: var(--secondary-color);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .level-card {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+}
