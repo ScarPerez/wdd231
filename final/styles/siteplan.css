@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+:root {
+    --powder-blue: #B1C8EA;
+    --butter-yellow: #FFEBAA;
+    --dark-cocoa: #382322;
+    --soft-cream: #FDEBDE;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--soft-cream);
+    color: var(--dark-cocoa);
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--powder-blue);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    margin: 0;
+}
+
+header p {
+    margin: 0.3rem 0 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background-color: var(--soft-cream);
+    border: 2px solid var(--powder-blue);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+h2 {
+    border-bottom: 2px solid var(--butter-yellow);
+    padding-bottom: 0.5rem;
+}
+
+.color-item {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    margin: 1%;
+}
+
+.color-box {
+    height: 70px;
+    border: 1px solid var(--dark-cocoa);
+    border-radius: 8px;
+}
+
+.powder-blue {
+    background-color: var(--powder-blue);
+}
+
+.butter-yellow {
+    background-color: var(--butter-yellow);
+}
+
+.dark-cocoa {
+    background-color: var(--dark-cocoa);
+}
+
+.soft-cream {
+    background-color: var(--soft-cream);
+}
+
+.font-item {
+    background-color: var(--powder-blue);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+}
+
+.font-item h3 {
+    margin-top: 0;
+}
+
+.wireframe {
+    margin: 1.5rem 0;
+}
+
+.wireframe img {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    margin: 1rem auto;
+    border: 2px solid var(--dark-cocoa);
+    border-radius: 8px;
+}
+
+footer {
+    background-color: var(--powder-blue);
+    text-align: center;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    .color-item {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}
